@@ -54,7 +54,6 @@ export function Sidebar() {
     // Student Links
     ...(isStudent ? [
       { name: "Dashboard", href: "/student/dashboard", icon: LayoutDashboard },
-      { name: "Courses", href: "/courses", icon: ShoppingBag },
       { name: "My Learning", href: "/student/courses", icon: BookOpen },
       { name: "My Blog", href: "/student/blog", icon: FileText },
       { name: "Settings", href: "/student/settings", icon: Settings },

@@ -687,7 +687,7 @@ export function RichTextEditor({
     editorProps: {
       attributes: {
         class:
-          "prose prose-lg max-w-none min-h-[400px] p-6 focus:outline-none",
+          "prose prose-lg max-w-none min-h-[600px] p-6 focus:outline-none",
       },
     },
   });
@@ -700,7 +700,7 @@ export function RichTextEditor({
       </div>
       <style jsx global>{`
         .ProseMirror {
-          min-height: 400px;
+          min-height: 600px;
           padding: 1.5rem;
         }
         .ProseMirror:focus {

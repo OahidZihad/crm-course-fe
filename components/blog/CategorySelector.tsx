@@ -28,14 +28,14 @@ export function CategorySelector({
   const subcategories = selectedCategory?.subcategories || [];
 
   return (
-    <div className="flex flex-col md:flex-row gap-4">
+    <div className="flex gap-6 w-full">
       {/* Category Select */}
-      <div className="flex-1">
+      <div className="flex-1 w-full">
         <label className="block text-sm font-bold mb-2 uppercase">
           Category *
         </label>
         <Select value={selectedCategoryId} onValueChange={onCategoryChange}>
-          <SelectTrigger className="border-2 border-border shadow-[4px_4px_0px_0px_#a8a6ff] rounded-none h-12 font-bold">
+          <SelectTrigger className="w-full border-2 border-border shadow-[4px_4px_0px_0px_#a8a6ff] rounded-none h-12 font-bold">
             <SelectValue placeholder="Select a category" />
           </SelectTrigger>
           <SelectContent className="border-2 border-border shadow-[4px_4px_0px_0px_#a8a6ff] rounded-none z-[100]">
@@ -53,7 +53,7 @@ export function CategorySelector({
       </div>
 
       {/* Subcategory Select */}
-      <div className="flex-1">
+      <div className="flex-1 w-full">
         <label className="block text-sm font-bold mb-2 uppercase">
           Subcategory
         </label>
@@ -64,7 +64,7 @@ export function CategorySelector({
           }
           disabled={subcategories.length === 0}
         >
-          <SelectTrigger className="border-2 border-border shadow-[4px_4px_0px_0px_#a8a6ff] rounded-none h-12 font-bold disabled:opacity-50">
+          <SelectTrigger className="w-full border-2 border-border shadow-[4px_4px_0px_0px_#a8a6ff] rounded-none h-12 font-bold disabled:opacity-50">
             <SelectValue placeholder="Select a subcategory" />
           </SelectTrigger>
           <SelectContent className="border-2 border-border shadow-[4px_4px_0px_0px_#a8a6ff] rounded-none z-[100]">
