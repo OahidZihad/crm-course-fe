@@ -16,7 +16,8 @@ import {
   Award,
   ShieldCheck,
   CreditCard,
-  Menu
+  Menu,
+  FileText
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
@@ -44,6 +45,7 @@ export function Sidebar() {
     ...(isTeacher ? [
       { name: "Dashboard", href: "/teacher/dashboard", icon: LayoutDashboard },
       { name: "My Courses", href: "/teacher/courses", icon: BookOpen },
+      { name: "My Blog", href: "/teacher/blog", icon: FileText },
       { name: "Students", href: "/teacher/students", icon: Users },
       { name: "Earnings", href: "/teacher/earnings", icon: DollarSign },
       { name: "Settings", href: "/teacher/settings", icon: Settings },
@@ -54,6 +56,7 @@ export function Sidebar() {
       { name: "Dashboard", href: "/student/dashboard", icon: LayoutDashboard },
       { name: "Courses", href: "/courses", icon: ShoppingBag },
       { name: "My Learning", href: "/student/courses", icon: BookOpen },
+      { name: "My Blog", href: "/student/blog", icon: FileText },
       { name: "Settings", href: "/student/settings", icon: Settings },
     ] : []),
     
@@ -61,6 +64,7 @@ export function Sidebar() {
     ...(isAdmin ? [
       { name: "Overview", href: "/admin/dashboard", icon: LayoutDashboard },
       { name: "Courses", href: "/admin/courses", icon: BookOpen },
+      { name: "Blog Moderation", href: "/admin/blog", icon: FileText },
       { name: "Teachers", href: "/admin/teachers", icon: Users },
       { name: "Financials", href: "/admin/financials", icon: CreditCard },
       { name: "Platform", href: "/admin/settings", icon: ShieldCheck },
